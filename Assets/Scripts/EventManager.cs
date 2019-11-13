@@ -66,7 +66,7 @@ public class EventManager : MonoBehaviour
         ui.TextSetUp("주변을 살펴 현 상황에 대한 정보를 조사하세요.");
         yield return new WaitForSeconds(3);
         ui.downText.text = "";
-        ui.upText.text = "1. 현 상황을 알 수 있는 <color=#008000ff>정보</color> 찾기";
+        ui.upText.text = "I. 현 상황을 알 수 있는 <color=#008000ff>정보</color> 찾기";
         clickSound.GetComponent<AudioSource>().Play();
         ui.targetImage.SetActive(true);
         ui.targetObject = checkPos[0];
@@ -88,7 +88,7 @@ public class EventManager : MonoBehaviour
         ui.TextSetUp("사람이 있을 법한 곳을 찾으십시오.");
         yield return new WaitForSeconds(3);
         ui.downText.text = "";
-        ui.upText.text = "<color=#808080ff>1. 주변의 상황을 알 수 있는 정보 찾기</color>\n2. 주변 <color=#008000ff>건물</color> 탐색";
+        ui.upText.text = "<color=#808080ff>I. 주변의 상황을 알 수 있는 정보 찾기</color>\nII. 주변 <color=#008000ff>건물</color> 탐색";
         clickSound.GetComponent<AudioSource>().Play();
         ui.targetObject = checkPos[1];
         yield return new WaitForSeconds(0.1f);
@@ -109,7 +109,7 @@ public class EventManager : MonoBehaviour
         ui.TextSetUp("우린 전쟁에서 분명 이길겁니다.");
         yield return new WaitForSeconds(3);
         ui.downText.text = "";
-        ui.upText.text = "<color=#808080ff>1. 주변의 상황을 알 수 있는 정보 찾기</color>\n<color=#808080ff>2. 주변 건물 탐색</color>\n3. <color=#008000ff>생존자</color> 흔적 탐색";
+        ui.upText.text = "<color=#808080ff>I. 주변의 상황을 알 수 있는 정보 찾기</color>\n<color=#808080ff>II. 주변 건물 탐색</color>\nIII. <color=#008000ff>생존자</color> 흔적 탐색";
         clickSound.GetComponent<AudioSource>().Play();
         ui.targetObject = checkPos[2];
         yield return new WaitForSeconds(0.1f);
@@ -128,7 +128,7 @@ public class EventManager : MonoBehaviour
         ui.TextSetUp("자유롭게 주변을 탐색하세요.");
         yield return new WaitForSeconds(3);
         ui.downText.text = "";
-        ui.upText.text = "<color=#808080ff>1. 주변의 상황을 알 수 있는 정보 찾기</color>\n<color=#808080ff>2. 주변 건물 탐색</color>\n<color=#808080ff>3. 생존자 흔적 탐색 </color>\n4. 자유롭게 주변 탐색";
+        ui.upText.text = "<color=#808080ff>I. 주변의 상황을 알 수 있는 정보 찾기</color>\n<color=#808080ff>II. 주변 건물 탐색</color>\n<color=#808080ff>III. 생존자 흔적 탐색 </color>\nIV. 자유롭게 주변 탐색";
         clickSound.GetComponent<AudioSource>().Play();
         ui.targetImage.SetActive(false);
         ui.targetObject = null;
